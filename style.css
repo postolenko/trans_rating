@@ -373,23 +373,23 @@ a:active {
     padding: 14px 1%;
     color: #002862;
 
-    -webkit-transition-property: background, color, box-shadow;
+    -webkit-transition-property: background, color, box-shadow, border;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background, color, box-shadow;
+    -moz-transition-property: background, color, box-shadow, border;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background, color, box-shadow;
+    -ms-transition-property: background, color, box-shadow, border;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background, color, box-shadow;
+    -o-transition-property: background, color, box-shadow, border;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background, color, box-shadow;
+    transition-property: background, color, box-shadow, border;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
@@ -397,24 +397,27 @@ a:active {
 .sign-in:link,
 .sign-in:visited {
     color: #002862;
+    border: 1px solid #cfdaea;
     background: rgba(207, 218, 234, 0);
 }
 
 .sign-in.active,
 .sign-in:active {
     color: #ffffff;
-    background: rgba(207, 218, 234, 1);
-    -webkit-box-shadow: 3px 2px 4px 0px rgba(154,180,217,0.25);
-    -moz-box-shadow: 3px 2px 4px 0px rgba(154,180,217,0.25);
-    box-shadow: 3px 2px 4px 0px rgba(154,180,217,0.25);
+    background: rgba(16, 68, 149, 1);
+    border: 1px solid rgba(16, 68, 149, 1);
+    -webkit-box-shadow: 3px 2px 4px 0px rgba(154, 180, 217, .25);
+    -moz-box-shadow: 3px 2px 4px 0px rgba(154, 180, 217, .25);
+    box-shadow: 3px 2px 4px 0px rgba(154, 180, 217, .25);
 }
 
 .sign-in:hover {
     color: #ffffff;
-    background: rgba(207, 218, 234, 1);
-    -webkit-box-shadow: 3px 2px 4px 0px rgba(154,180,217,0.25);
-    -moz-box-shadow: 3px 2px 4px 0px rgba(154,180,217,0.25);
-    box-shadow: 3px 2px 4px 0px rgba(154,180,217,0.25);
+    background: rgba(16, 68, 149, 1);
+    border: 1px solid rgba(16, 68, 149, 1);
+    -webkit-box-shadow: 3px 2px 4px 0px rgba(154, 180, 217, .25);
+    -moz-box-shadow: 3px 2px 4px 0px rgba(154, 180, 217, .25);
+    box-shadow: 3px 2px 4px 0px rgba(154, 180, 217, .25);
 }
 
 .sign-in-icon {
@@ -469,31 +472,31 @@ a:active {
     background: rgba(16, 68, 149, 0);
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
     font-size: 18px;
-    line-height: 20px;
-    padding: 10px 17px;
+    line-height: 18px;
+    margin: 12px 17px;
     color: #002862;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
     border-radius: 3px;
 
-    -webkit-transition-property: background, color;
+    -webkit-transition-property: background, color, border-bottom;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
 
-    -moz-transition-property: background, color;
+    -moz-transition-property: background, color, border-bottom;
     -moz-transition-duration: .3s;
     -moz-transition-timing-function: ease;
 
-    -ms-transition-property: background, color;
+    -ms-transition-property: background, color, border-bottom;
     -ms-transition-duration: .3s;
     -ms-transition-timing-function: ease;
 
-    -o-transition-property: background, color;
+    -o-transition-property: background, color, border-bottom;
     -o-transition-duration: .3s;
     -o-transition-timing-function: ease;
 
-    transition-property: background, color;
+    transition-property: background, color, border-bottom;
     transition-duration: .3s;
     transition-timing-function: ease;
 }
@@ -502,17 +505,23 @@ a:active {
 .main-nav li a:visited {
     background: rgba(16, 68, 149, 0);
     color: #002862;
+    border-bottom: 1px solid transparent;
 }
 
 .main-nav li a.active,
-.main-nav li a:active {
+.main-nav li a:active,
+.main-nav li a.active:hover {
     background: rgba(16, 68, 149, 1);
     color: #ffffff;
+    margin: 0;
+    padding: 12px 17px;
+    border-bottom: 1px solid transparent;
 }
 
 .main-nav li a:hover {
-    background: rgba(16, 68, 149, 1);
-    color: #ffffff;
+    background: rgba(16, 68, 149, 0);
+    color: #002862;
+    border-bottom: 1px solid #002862;
 }
 
 .search {
@@ -715,8 +724,6 @@ a:active {
     border: 1px solid #cfdaea;
     background: rgba(231, 236, 244, 1);
 }
-
- 
 
 /*-------------------------------------------*/
 /* ----- CONTENT ------ */
@@ -1043,6 +1050,134 @@ a:active {
 
 /*-- /Testimonials --*/
 
+
+/*-- Выбор Региона --*/
+
+.choise-box {
+    display: inline-block;
+    vertical-align: top;
+    /*width: 24.5%;*/
+    width: 280px;
+    border: 1px solid #cfdaea;
+    margin: 4px 4px 4px 4px;
+    padding: 21px 1% 27px 1%;
+}
+
+.choise-box h3 {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 400;
+    font-style: normal;
+    color: #104495;
+    padding: 3px 0 8px 4%;
+}
+
+.choise-list {
+
+}
+
+.choise-list li {
+    display: block;
+}
+
+.choise-list li a {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(231, 236, 244, 0);
+    position: relative;
+    padding: 9px 5px 9px 15px;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: #517dc2;
+
+    -webkit-transition-property: color, background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color, background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color, background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color, background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color, background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.choise-list li a:link,
+.choise-list li a:visited {
+    color: #517dc2;
+    background: rgba(231, 236, 244, 0);
+}
+
+.choise-list li a:active,
+.choise-list li a.active {
+    color: #104495;
+    background: rgba(231, 236, 244, 1);
+}
+
+.choise-list li a:hover {
+    color: #104495;
+    background: rgba(231, 236, 244, 1);
+}
+
+.choise-list li a span.link-triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: -12px;
+    border-top: 20px solid transparent;
+    border-left: 13px solid rgba(231, 236, 244, 0);
+    border-bottom: 20px solid transparent;
+
+    -webkit-transition-property: border-left;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-left;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-left;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-left;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-left;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.choise-list li a:link span.link-triangle,
+.choise-list li a:visited span.link-triangle {
+    border-left: 13px solid rgba(231, 236, 244, 0);
+}
+
+.choise-list li a:active span.link-triangle,
+.choise-list li a.active span.link-triangle {
+    border-left: 13px solid rgba(231, 236, 244, 1);
+}
+
+.choise-list li a:hover span.link-triangle {
+    border-left: 13px solid rgba(231, 236, 244, 1);
+}
+
+/*-- /Выбор Региона --*/
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
