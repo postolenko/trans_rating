@@ -1,22 +1,11 @@
 $(document).ready(function() {
 
-    
-    var footerPosition;
-
 
     $(window).resize(function() {
 
+        $(".wrapper").css({"min-height" : $(window).height() + "px"});
 
-        // footerPosition = setTimeout(function() {
-
-        setTimeout(function() {
-            // clearTimeout(footerPosition);
-
-            $(".wrapper").css({"min-height" : $(window).height() + "px"});
-
-            $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
-
-        }, 300);
+        $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
         // -------------------------
 
@@ -36,7 +25,7 @@ $(document).ready(function() {
 
             $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
-        }, 300);
+        }, 500);
 
     });
 
