@@ -1053,6 +1053,10 @@ a:active {
 
 /*-- Выбор Региона --*/
 
+.mosaik {
+    margin: 13px 0;
+}
+
 .choise-box {
     display: inline-block;
     vertical-align: top;
