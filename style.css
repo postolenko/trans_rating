@@ -425,14 +425,17 @@ a:active {
     vertical-align: top;
     width: 17px;
     height: 17px;
-    background-image: url(img/sign_in_icon.png);
-    background-position: center;
-    background-size: 100%;
+    background-image: url(img/sign_in_icon_sprite.png);
+    background-position: 0 -2px;
     background-repeat: no-repeat;
 }
 
 .sign-in .sign-in-icon {
     margin: 1px 4% 0 0;
+}
+
+.sign-in:hover .sign-in-icon {
+    background-position: 0 -25px;
 }
 
 .header .row-2 {
@@ -1065,6 +1068,7 @@ a:active {
     border: 1px solid #cfdaea;
     margin: 4px 4px 4px 4px;
     padding: 21px 1% 27px 1%;
+    background: rgba(255, 255, 255, 1);
 }
 
 .choise-box h3 {
