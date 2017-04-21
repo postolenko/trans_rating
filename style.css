@@ -335,7 +335,7 @@ a:active {
 .logo-block {
     display: inline-block;
     vertical-align: middle;
-    width: 50%;
+    width: 65%;
     max-width: 358px;
 }
 
@@ -1200,11 +1200,16 @@ footer {
 .footer .col {
     display: inline-block;
     vertical-align: middle;
-    width: 50%;
+    /*width: 50%;*/
     padding: 10px 0;
 }
 
+.footer .col-1 {
+    width: 72%;
+}
+
 .footer .col-2 {
+    width: 28%;
     text-align: right;
 }
 
