@@ -20,6 +20,13 @@ $(document).ready(function() {
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
+        // -------------------------
+
+        $(".triangle-green").css({
+                            "border-top": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent",
+                            "border-bottom": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent"
+                        });
+
     });
 
 
@@ -30,6 +37,13 @@ $(document).ready(function() {
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
     });
+
+    // ----------------------------------------
+
+    $(".triangle-green").css({
+                                "border-top": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent",
+                                "border-bottom": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent"
+                            });
 
 
 });
