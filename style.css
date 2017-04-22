@@ -1313,7 +1313,7 @@ a:active {
 
 /*-- /Выбор Региона --*/
 
-/*-- Companie --*/
+/*-- Companies --*/
 
 .company-info-box {
     border: 1px solid #cfdaea;
@@ -1627,9 +1627,197 @@ a:active {
     margin: 3px 1%;
 }
 
+/*-- /Companies --*/
 
-/*-- /Companie --*/
+/*-- Articles --*/
 
+header h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .head-link {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 154px;
+    margin: 5px 1%;
+    padding: 10px 1%;
+    text-align: center;
+    border-width: 0;
+    cursor: pointer;
+    background: rgba(16, 68, 149, 1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff;
+
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+header .head-link:link,
+header .head-link:visited {
+    background: rgba(16, 68, 149, 1);
+}
+
+header .head-link.active,
+header .head-link:active,
+header .head-link:hover {
+    background: rgba(26, 85, 177, 1);
+}
+
+.article {
+    border: 1px solid #cfdaea;
+    margin: 10px 0;
+    padding: 18px 2% 20px 2%;
+}
+
+/*.article:nth-child(1) {
+    margin: 20px 0 10px 0;
+}*/
+
+/*.article:last-child {
+    margin: 10px 0 25px 0;
+}*/
+
+.article .col {
+    float: left;
+}
+
+.article .col-1 {
+    width: 21%;
+    padding: 7px 0;
+}
+
+.article .col-2 {
+    width: 65%;
+}
+
+.article .col-3 {
+    width: 14%;
+}
+
+.article .col-1 .img-box {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 140px;
+    overflow: hidden;
+}
+
+.article .col-1 .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .7s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .7s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .7s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+.article .col-1 .img-box:hover img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.article h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #104495;
+    padding: 8px 0 11px 0;
+}
+
+.article p.price {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 3px 6px;
+    padding: 4px 8px;
+    position: relative;
+    top: -1px;
+    background: rgba(255, 128, 0, 1);
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.price .fa-rub {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.article p {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #272b34;
+}
+
+.article .date {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: #b6bfd7;
+    padding: 6px 0;
+}
+
+/*-- /Articles --*/
+ 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
