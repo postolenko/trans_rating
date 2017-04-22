@@ -205,6 +205,10 @@ a:active {
     line-height: 0;
 }
 
+.margin-big {
+    margin-top: 50px;
+}
+
 .left {
     float: left;
 }
@@ -303,6 +307,128 @@ a:active {
 
 
 /*-/Thumbnails-*/
+
+/*-Blue button-*/
+
+.blue-btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 240px;
+    text-align: center;
+    margin: 10px 0;
+    border-width: 0;
+    cursor: pointer;
+    background: rgba(16, 68, 149, 1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 15px 1%;
+    color: #ffffff;
+
+    -webkit-transition-property: background;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.blue-btn:link,
+.blue-btn:visited {
+    background: rgba(16, 68, 149, 1);
+}
+
+.blue-btn.active,
+.blue-btn:active {
+    background: rgba(26, 85, 177, 1);
+}
+
+.blue-btn:hover {
+    background: rgba(26, 85, 177, 1);
+}
+
+.blue-btn i {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 4% 0 0;
+    font-size: 19px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.attentive-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 19px;
+    background-image: url(img/info_company_sprite.png);    
+    background-repeat: no-repeat;
+    background-position: 0 -39px;
+}
+
+/*-/Blue button-*/
+
+.show-all {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 3px 0;
+    color: #104495;
+    border-bottom: 1px solid #104495;
+
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.show-all:link,
+.show-all:visited {
+    border-bottom: 1px solid #104495;
+}
+
+.show-all.active,
+.show-all:active {
+    border-bottom: 1px solid transparent;
+}
+
+.show-all:hover {
+    border-bottom: 1px solid transparent;
+}
 
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
@@ -1186,6 +1312,324 @@ a:active {
 }
 
 /*-- /Выбор Региона --*/
+
+/*-- Companie --*/
+
+.company-info-box {
+    border: 1px solid #cfdaea;
+    margin: 10px 0;
+    padding: 18px 3% 21px 3%;
+}
+
+.company-info-box .col {
+    float: left;
+}
+
+.company-info-box .col-1 {
+    width: 33%;
+}
+
+.company-info-box .col-2 {
+    width: 25%;
+}
+
+.company-info-box .col-3 {
+    width: 42%;
+}
+
+.company-contact {
+    display: table;
+    width: 100%;
+    margin: 19px 0;
+}
+
+.company-contact:nth-child(1) {
+    margin: 10px 0 0 0;
+}
+
+/*.company-contact.tel-links {
+    margin: 19px 0 0 0;
+}*/
+
+.company-contact .icon-box {
+    display: table-cell;
+    vertical-align: top;
+    width: 55px;
+}
+
+.company-contact .col-2 {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding: 6px 0 0 0;
+}
+
+.icon-box i {
+    display: block;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    line-height: 42px;
+    padding: 1px 0 0 0;
+    color: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 128, 0);
+}
+
+.map-marker-icon {
+    display: block;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    padding: 1px 0 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 128, 0);
+    background-image: url(img/info_company_sprite.png);
+    background-position: 14px 5px;
+    background-repeat: no-repeat;
+}
+
+.company-contact .tel-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 0;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: normal;
+    color: #272b34;
+    border-bottom: none;
+
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.company-contact .tel-link:link,
+.company-contact .tel-link:visited {
+    color: #272b34;
+    border-bottom: none;
+}
+
+.company-contact .tel-link:active,
+.company-contact .tel-link.active {
+    color: #104495;
+}
+
+.company-contact .tel-link:hover {
+    color: #104495;
+}
+
+.company-contact p {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #272b34;
+}
+
+.company-contact a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 0;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #104495;
+    border-bottom: 1px solid #104495;
+
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.company-contact a:link,
+.company-contact a:visited {
+    border-bottom: 1px solid #104495;
+}
+
+.company-contact a:active,
+.company-contact a.active {
+    border-bottom: 1px solid transparent;
+}
+
+.company-contact a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.big-slider {
+    display: block;
+    width: 100%;
+    max-width: 470px;
+    height: 312px;
+    margin: 10px 0 0 0;
+}
+
+.big-slider .slide {
+    height: 312px;
+    overflow: hidden;
+}
+
+.big-slider .slide img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .7s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .7s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .7s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+.big-slider .slide:hover img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.miniature-slider {
+    padding: 4px 0;
+}
+
+.miniature-slider .slide {
+    margin: 3px;
+    height: 60px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.miniature-slider .slide img {
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: transform;
+    -moz-transition-duration: .7s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: transform;
+    -ms-transition-duration: .7s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: transform;
+    -o-transition-duration: .7s;
+    -o-transition-timing-function: ease;
+
+    transition-property: transform;
+    transition-duration: .7s;
+    transition-timing-function: ease;
+}
+
+.miniature-slider .slide:hover img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.descript-article {
+    border: 1px solid #cfdaea;
+    margin: 10px 0;
+    padding: 18px 3%;
+}
+
+.descript-article h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #104495;
+    padding: 0 0 4px 0;
+}
+.descript-article p {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: #272b34;
+    padding: 5px 0
+}
+
+.testimonial-header {
+    padding: 12px 0 8px 0;
+}
+
+.testimonial-header h2,
+.testimonial-header .show-all {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.testimonial-header .show-all {
+    margin: 3px 1%;
+}
+
+
+/*-- /Companie --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/

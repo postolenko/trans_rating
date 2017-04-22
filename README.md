@@ -1,3 +1,4 @@
 # http://postolenko.github.io/trans_rating/index.html
 # http://postolenko.github.io/trans_rating/testimonials.html
 # http://postolenko.github.io/trans_rating/choise_region.html
+# http://postolenko.github.io/trans_rating/companies.html
