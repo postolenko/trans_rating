@@ -104,7 +104,9 @@
   .select2-search--dropdown .select2-search__field {
     padding: 4px;
     width: 100%;
-    box-sizing: border-box; }
+    height: 30px;
+    box-sizing: border-box;
+    font-style: normal;}
     .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
       -webkit-appearance: none; }
   .select2-search--dropdown.select2-search--hide {

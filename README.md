@@ -4,3 +4,4 @@
 # http://postolenko.github.io/trans_rating/companies.html
 # http://postolenko.github.io/trans_rating/articles.html
 # http://postolenko.github.io/trans_rating/articles_popup.html
+# http://postolenko.github.io/trans_rating/all_articles.html
