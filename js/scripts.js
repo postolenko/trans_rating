@@ -64,5 +64,34 @@ $(document).ready(function() {
 
     }
 
+    // ----------------------------------------
+
+    $(function() {
+
+        var popupName;
+
+        $(".show_popup").click(function(clickEvent) {
+
+            clickEvent.preventDefault();
+
+            popupName = $(this).attr("data-popup-name");
+
+            $(".popup-block").fadeIn(300);
+
+            $(".popup-block .popup[data-popup-name = " + popupName + "]").fadeIn(300);
+
+        });
+
+        $(".popup-bg, .close-popup").click(function() {
+
+            $(".popup-block").fadeOut(300);
+
+            $(".popup-block .popup[data-popup-name = " + popupName + "]").fadeOut(300);
+
+        });
+
+    });
+
+
 
 });

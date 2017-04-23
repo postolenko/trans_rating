@@ -13,11 +13,13 @@
 	<link rel="stylesheet" type="text/css" href="font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link href="vendors/css/select2.css" rel="stylesheet" />
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
@@ -104,6 +106,133 @@
 	<!-- /Header -->
 
 		<!-- Content -->
+
+			<div class="popup-block scroll">
+				
+				<div class="popup-bg"></div>
+
+				<div class="popup" data-popup-name="make_order">
+
+					<div class="top_block">							
+						<h2>Сделать заказ</h2>
+						<button type="button" class="close-popup"></button>
+					</div>
+
+					<div>
+
+						<form>
+
+							<div class="input-block">
+								<label class="inportant">Имя</label>
+								<input type="text" placeholder="Указать">
+							</div>
+
+							<div class="input-block">
+								<label class="inportant">Телефон</label>
+								<input type="tel" placeholder="Указать">
+							</div>
+
+							<div class="input-block select-block">
+								<label class="inportant">Раздел</label>
+								<select>
+									<option>Авто-краны</option>
+									<option>Раздел 2</option>
+									<option>Раздел 3</option>
+									<option>Раздел 4</option>
+								</select>
+							</div>
+
+							<div class="input-block select-block">
+								<label class="inportant">Подраздел</label>
+								<select>
+									<option>Красные авто-краны</option>
+									<option>Раздел 2</option>
+									<option>Раздел 3</option>
+									<option>Раздел 4</option>
+								</select>
+							</div>
+
+							<div class="input-block">
+								<label class="inportant">Регион</label>
+								<input type="tel" placeholder="Краснодарский край">
+							</div>
+
+							<div class="input-block">
+								<label class="inportant">Город</label>
+								<input type="tel" placeholder="Сочи">
+							</div>
+
+							<div class="bottom_block">
+								<p>Обязательные поля отмечены звездочкой <span class="star-important">&#9733;</span></p>
+								<button type="submit">Сделать заказ</button>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+				<div class="popup" data-popup-name="make_order_2">
+
+					<div class="top_block">							
+						<h2>Сделать заказ 2</h2>
+						<button type="button" class="close-popup"></button>
+					</div>
+
+					<form>
+
+							<div class="input-block">
+								<label class="inportant">Имя</label>
+								<input type="text" placeholder="Указать">
+							</div>
+
+							<div class="input-block">
+								<label class="inportant">Телефон</label>
+								<input type="tel" placeholder="Указать">
+							</div>
+
+							<div class="input-block select-block">
+								<label class="inportant">Раздел</label>
+								<select>
+									<option>Авто-краны</option>
+									<option>Раздел 2</option>
+									<option>Раздел 3</option>
+									<option>Раздел 4</option>
+								</select>
+							</div>
+
+							<div class="input-block select-block">
+								<label class="inportant">Подраздел</label>
+								<select>
+									<option>Красные авто-краны</option>
+									<option>Раздел 2</option>
+									<option>Раздел 3</option>
+									<option>Раздел 4</option>
+								</select>
+							</div>
+
+							<div class="input-block">
+								<label class="inportant">Регион</label>
+								<input type="tel" placeholder="Краснодарский край">
+							</div>
+
+							<div class="input-block">
+								<label class="inportant">Город</label>
+								<input type="tel" placeholder="Сочи">
+							</div>
+
+							<div class="bottom_block">
+								<p>Обязательные поля отмечены звездочкой <span class="star-important">&#9733;</span></p>
+								<button type="submit">Сделать заказ</button>
+							</div>
+
+						</form>
+
+				</div>
+
+			</div>
+
 			<div class="content">
 
 				<section>
@@ -121,7 +250,10 @@
 
 						<header>
 
-							<h2>Автовышки</h2> <button type="button" class="head-link show_popup" data-popup-name="make_order">Сделать заказ</button>
+							<h2>Автовышки</h2>
+							<button type="button" class="head-link show_popup" data-popup-name="make_order">Сделать заказ</button>
+
+							<button type="button" class="head-link show_popup" data-popup-name="make_order_2">Сделать заказ 2</button>
 
 						</header>
 
@@ -340,6 +472,17 @@
 
 		<script src="js/scripts.js"></script>
 		<script type="text/javascript">
+
+			(function($){
+
+				$(window).on("load",function(){
+
+					$(".scroll").mCustomScrollbar();
+
+				});
+
+			})(jQuery);
+
 			$("select").select2();
 
 			$(".big-slider").slick({

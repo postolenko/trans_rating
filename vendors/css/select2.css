@@ -551,6 +551,10 @@
   min-height: 49px;
 }
 
+.popup .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-style: italic !important;
+}
+
 .input-box .select2.select2-container.select2-container--default {
     width: 63% !important;
     height: 38px !important;
