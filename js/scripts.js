@@ -92,6 +92,21 @@ $(document).ready(function() {
 
     });
 
+    // ------------------------------------------
+
+    $(function() {
+
+        $(this).keydown(function(eventObject){
+            if (eventObject.which == 27) {
+                
+                $(".popup-block").fadeOut(300);
+                $(".popup-block .popup").fadeOut(300);
+
+             }
+        });
+
+    });
+
 
 
 });
