@@ -1890,7 +1890,7 @@ header .head-link:hover {
 }
 
 .add-article .form-header {
-    padding: 10px 0 20px 27%;
+    padding: 10px 0 5px 27%;
 }
 
 .header-h .col {
@@ -1927,12 +1927,13 @@ header .head-link:hover {
 .form-box.add-article {
     border: 1px solid #cfdaea;
     margin: 28px 0 35px 0;
-    padding: 18px 2% 27px 2%;
+    padding: 18px 2%;
 }
 
 .form-box.add-article .input-block {
     font-size: 0;
     line-height: 0;
+    padding: 9px 0;
 }
 
 .add-article .input-block label {
@@ -1954,11 +1955,11 @@ header .head-link:hover {
 .add-article .input-block .select-box {
     display: inline-block;
     vertical-align: top;
-    width: 46%;
+    width: 45%;
 }
 
 .add-article .input-block .select-box {
-    padding: 5px 0;
+    padding: 7px 0;
 }
 
 .add-article .select2-container .select2-selection--single .select2-selection__rendered {
@@ -2018,13 +2019,12 @@ textarea {
 .upload-file-box {
     display: inline-block;
     vertical-align: top;
-    width: 46%;
-    padding: 3px 0;
+    width: 45%;
     position: relative;
 }
 
 .input-block.upload-block label {
-    padding: 16px 2% 0 0;
+    padding: 10px 2% 0 0;
 }
 
 .upload-file-box input[type=file] {
@@ -2046,8 +2046,9 @@ textarea {
 
 .add-article .orange-btn {
     display: block;
-    width: 46%;
-    margin: 2px auto;
+    width: 45%;
+    /*margin: 11px auto;*/
+    margin: 11px 0 11px 27%;
 }
 
 
@@ -2334,7 +2335,7 @@ p .star-important {
     width: 100%;
     cursor: pointer;
     margin: 10px 0;
-    padding: 12px 2%;
+    padding: 13px 2% 14px 2%;
     background: rgba(238, 151, 58, 1);
     border-width: 0;
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
