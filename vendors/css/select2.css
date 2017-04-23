@@ -532,7 +532,7 @@
 }
 
 .select2-container .select2-selection--single {
-  height: 49px;
+  height: 50px;
 }
 
 .select2-results__options li {
@@ -550,7 +550,7 @@
   line-height: 49px;
   font-weight: normal;
   color: #002862;
-  min-height: 49px;
+  min-height: 50px;
 }
 
 .popup .select2-container--default .select2-selection--single .select2-selection__rendered {

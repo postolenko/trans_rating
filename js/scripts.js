@@ -107,6 +107,20 @@ $(document).ready(function() {
 
     });
 
+    // ------------------------------------------
+
+    $(function() {
+
+        $(".upload-file").click(function() {
+
+            var uploadFileAttr = $(this).attr("data-file-index");
+
+            $("input[id = upload_file_" + uploadFileAttr +"]").click();
+
+        });
+
+    });
+
 
 
 });
