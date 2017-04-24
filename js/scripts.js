@@ -121,6 +121,34 @@ $(document).ready(function() {
 
     });
 
+    // ------------------------------------------
+
+    $(function() {
+
+        $(".tab-link").click(function() {
+
+            var tabLinkParent = $(this).parent($(".tabs-links"));
+
+            var indexTabsSection =  tabLinkParent.index(".tabs-links");
+
+            console.log(indexTabsSection);
+
+            if( $(this).hasClass("active") ) {
+
+                return false;
+
+            } else {
+
+                $(".tabs-links:eq("+ indexTabsSection +") .tab-link").removeClass("active");
+
+                $(this).addClass("active");
+
+            }
+
+        });
+
+    });
+
 
 
 });
