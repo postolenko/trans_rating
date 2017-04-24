@@ -1796,6 +1796,11 @@ header .head-link:hover {
     background: rgba(26, 85, 177, 1);
 }
 
+header .head-link.width-90 {
+    margin-top: 1px;
+    min-width: 90px;
+}
+
 .article {
     border: 1px solid #cfdaea;
     margin: 10px 0;
@@ -1941,10 +1946,6 @@ header .head-link:hover {
     margin: 11px 0;
 }
 
-.form-box .form-header {
-    padding: 10px 0 5px 27%;
-}
-
 .header-h .col {
     display: table-cell;
     vertical-align: middle;
@@ -1980,6 +1981,10 @@ header .head-link:hover {
     border: 1px solid #cfdaea;
     margin: 28px 0 35px 0;
     padding: 18px 2%;
+}
+
+.form-box .form-header {
+    padding: 10px 0 5px 27%;
 }
 
 .form-box .input-block {
@@ -2596,8 +2601,136 @@ p.small {
     color: #104495;
 }
 
-
 /*-- /Account --*/
+
+/*-- Account 2 --*/
+
+.orange-btn-box {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 210px;
+}
+
+.tables {
+    margin: 11px 0 80px 0;
+}
+
+.table-box {
+    margin: 18px 0;
+    padding: 2px 0 8px 0;
+    border: 1px solid #cfdaea;
+}
+
+.table {
+    display: table;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.table-box.table-header {
+    border: none;
+    margin: 5px 0;
+}
+
+.table-box.table-header + .table-box {
+    margin-top: 0;
+}
+
+.table .cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table .cell-1 {
+    width: 24%;
+}
+
+.table .cell-2 {
+    width: 13%;
+}
+
+.table .cell-3 {
+    width: 22%;
+}
+
+.table .cell-4 {
+    width: 18%;
+}
+
+.table .cell-5 {
+    width: 17%;
+}
+
+.table h5 {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #99a7c8;
+}
+
+.table p {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #104495;
+}
+
+.table .orange-btn {
+    margin: 8px 0;
+    padding: 9px 1% 10px 1%;
+    font-size: 18px;
+}
+
+.table .link {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #104495;
+    margin: 5px 0;
+    border-bottom: 1px solid #104495;
+
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.table .link:link,
+.table .link:visited {
+    border-bottom: 1px solid #104495;
+}
+
+.table .link.active,
+.table .link:active {
+    border-bottom: 1px solid transparent;
+}
+
+.table .link:hover {
+    border-bottom: 1px solid transparent;
+}
+
+/*-- /Account 2 --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
@@ -2887,6 +3020,7 @@ p .star-important {
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
+    text-align: center;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -o-border-radius: 3px;
@@ -2916,6 +3050,7 @@ p .star-important {
 .orange-btn:hover {
     background: rgba(241, 165, 83, 1);
 }
+
 
 
 /*-- /Popup --*/

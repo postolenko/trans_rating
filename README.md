@@ -11,3 +11,4 @@
 # http://postolenko.github.io/trans_rating/profile.html
 # http://postolenko.github.io/trans_rating/top.html
 # http://postolenko.github.io/trans_rating/account.html
+# http://postolenko.github.io/trans_rating/account_2.html
