@@ -1026,44 +1026,66 @@ a:active {
     width: 64%;
 }
 
-.green-box {
+.rating-box {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
     max-width: 166px;
     background: rgba(6, 180, 84, 1);
     text-align: center;
-    padding: 11px 5%;
+    padding: 6px 5% 8px 5%;
     position: relative;
 }
 
-.green-box h3 {
+.rating-box.green {
+    background: rgba(6, 180, 84, 1);
+}
+
+.rating-box.orange {
+    background: rgba(226, 125, 16, 1);
+}
+
+.rating-box.orange .triangle {
+    border-left: 30px solid rgba(226, 125, 16, 1);
+}
+
+.rating-box.phiolet {
+    background: rgba(102, 82, 180, 1);
+}
+
+.rating-box.phiolet .triangle {
+    border-left: 30px solid rgba(102, 82, 180, 1);
+}
+
+.rating-box h3.company-info-h {
+    display: block;
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 400;
     color: #ffffff;
-    padding: 3px 0;
+    padding: 3px 0 4px 0;
 }
 
-.green-box .inner {
+.rating-box .inner {
     border: 2px solid #ffffff;
     margin: 5px 0;
     padding: 0 5%;
 }
 
-.green-box .inner .col {
+.rating-box .inner .col {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle !important;
     padding: 0;
+    float: none;
 }
 
-.green-box .inner .col-1 {
-    width: 49%;
+.rating-box .inner .col-1 {
+    width: 49% !important;
     text-align: center;
 }
 
-.green-box .col-1 p {
+.rating-box .inner .col-1 p {
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
     font-size: 40px;
     line-height: 50px;
@@ -1073,18 +1095,37 @@ a:active {
     padding: 0;
 }
 
-.green-box .inner .col-2 {
-    width: 51%;
+.rating-box .inner .col-2 {
+    width: 51% !important;
     text-align: left;
 }
 
-.green-box .col-2 p {
+.rating-box .inner .col-2 p {
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
     font-size: 17px;
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
     padding: 0;
+}
+/*
+.green-box p {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0;
+}*/
+
+.rating-box p.company-info-p {
+    display: block;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 2px 0 0 0;
 }
 
 .info-box p {
@@ -2237,6 +2278,7 @@ p.small {
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
     font-size: 17px;
     line-height: 23px;
+    font-weight: 400;
     color: #002862;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -2274,9 +2316,6 @@ p.small {
     right: 9px;
 }
 
-
-
-
 /*-- /Order Page --*/
 
 /*-- Profile --*/
@@ -2299,6 +2338,169 @@ p.small {
 }
 
 /*-- /Profile --*/
+
+/*-- Топ компаний --*/
+
+.top-companies {
+    padding: 10px 0 5px 0;
+}
+
+.top-company {
+    border: 1px solid #cfdaea;
+    position: relative;
+    margin: 10px 0;
+    padding: 23px 2.5% 20px 2.5%;
+}
+
+.top-place-box {
+    display: block;
+    width: 106px;
+    height: 106px;
+    background-image: url(img/top_place_num.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    padding: 12px 0 0 0;
+}
+
+.top-company .top-place-box {
+    position: absolute;
+    top: 50%;
+    left: -106px;
+    margin: -53px 0 0 -3%;
+}
+
+.top-place-box h3.num {
+    display: block;
+    text-align: center;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 33px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #104495;
+    padding: 0;
+}
+
+.top-place-box h3 {
+    display: block;
+    text-align: center;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #104495;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.article.top-company .col {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.article.top-company .col-1 {
+    width: 20%;
+    padding: 7px 0;
+}
+
+.article.top-company .col-2 {
+    width: 62%;
+}
+
+.article.top-company .col-3 {
+    vertical-align: middle;
+    width: 18%;
+}
+
+.article-h {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #104495;
+    margin: 8px 0 11px 0;
+    border-bottom: 1px solid transparent;
+
+    -webkit-transition-property: border-bottom;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: border-bottom;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: border-bottom;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: border-bottom;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: border-bottom;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.article-h:link,
+.article-h:visited {
+    border-bottom: 1px solid transparent;
+}
+
+.article-h.active,
+.article-h:active,
+.article-h:hover {
+    border-bottom: 1px solid #104495;
+}
+
+.comment-icon-blue {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    background-image: url(img/comment_icon_blue.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.count-testimonial {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #104495;
+    padding: 8px 0;
+}
+
+.count-testimonial .comment-icon-blue {
+    position: relative;
+    top: 1px;
+    margin: 0 4px 0 0;
+}
+
+.p-blue-box {
+    border: 1px solid #cfdaea;
+    position: relative;
+    margin: 15px 0;
+    padding: 30px 2.5% 23px 2.5%;
+}
+
+.p-blue-box p {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #517dc2;
+}
+
+/*-- /Топ компаний --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

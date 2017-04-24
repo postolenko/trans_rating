@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
 
+    var ratingBoxCount = $(".rating-box").length - 1;
+    var ratingBoxIndex;
+
+    getTriangleSize();
+
     $(window).resize(function() {
 
         $(".wrapper").css({"min-height" : $(window).height() + "px"});
@@ -9,10 +14,7 @@ $(document).ready(function() {
 
         // -------------------------
 
-        $(".triangle-green").css({
-                            "border-top": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent",
-                            "border-bottom": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent"
-                        });
+        getTriangleSize();
 
     });
 
@@ -28,14 +30,6 @@ $(document).ready(function() {
         }, 500);
 
     });
-
-    // ----------------------------------------
-
-    $(".triangle-green").css({
-                                "border-top": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent",
-                                "border-bottom": ( $(".green-box").outerHeight() / 2 ) + "px solid transparent"
-                            });
-
 
     // ----------------------------------------
 
@@ -148,6 +142,21 @@ $(document).ready(function() {
         });
 
     });
+
+    // ----------------------------------------
+
+    function getTriangleSize() {
+
+        for(ratingBoxIndex = 0; ratingBoxIndex <= ratingBoxCount; ratingBoxIndex++) {
+
+            $(".rating-box:eq("+ ratingBoxIndex +") .triangle-green").css({
+                                    "border-top": ( $(".rating-box:eq("+ ratingBoxIndex +")").outerHeight() / 2 ) + "px solid transparent",
+                                    "border-bottom": ( $(".rating-box:eq("+ ratingBoxIndex +")").outerHeight() / 2 ) + "px solid transparent"
+                                });
+
+        }
+
+    }
 
 
 

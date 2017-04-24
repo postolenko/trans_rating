@@ -9,3 +9,4 @@
 # http://postolenko.github.io/trans_rating/add_article.html
 # http://postolenko.github.io/trans_rating/order_page.html
 # http://postolenko.github.io/trans_rating/profile.html
+# http://postolenko.github.io/trans_rating/top.html
