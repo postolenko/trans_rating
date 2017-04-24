@@ -1899,7 +1899,7 @@ header .head-link:hover {
     margin: 11px 0;
 }
 
-.add-article .form-header {
+.form-box .form-header {
     padding: 10px 0 5px 27%;
 }
 
@@ -1934,19 +1934,19 @@ header .head-link:hover {
     color: #104495;
 }
 
-.form-box.add-article {
+.form-box {
     border: 1px solid #cfdaea;
     margin: 28px 0 35px 0;
     padding: 18px 2%;
 }
 
-.form-box.add-article .input-block {
+.form-box .input-block {
     font-size: 0;
     line-height: 0;
     padding: 9px 0;
 }
 
-.add-article .input-block label {
+.form-box .input-block label {
     display: inline-block;
     vertical-align: top;
     width: 27%;
@@ -1959,25 +1959,25 @@ header .head-link:hover {
     text-align: right;
 }
 
-.add-article .input-block input,
-.add-article .input-block textarea,
-.add-article .input-block .two-inputs,
-.add-article .input-block .select-box {
+.form-box .input-block input,
+.form-box .input-block textarea,
+.form-box .input-block .two-inputs,
+.form-box .input-block .select-box {
     display: inline-block;
     vertical-align: top;
     width: 45%;
 }
 
-.add-article .input-block .select-box {
+.form-box .input-block .select-box {
     padding: 7px 0;
 }
 
-.add-article .select2-container .select2-selection--single .select2-selection__rendered {
+.form-box .select2-container .select2-selection--single .select2-selection__rendered {
     padding-left: 20px;
 }
 
-.add-article input,
-.add-article textarea {
+.form-box input,
+.form-box textarea {
     padding-left: 20px;
 }
 
