@@ -2549,9 +2549,9 @@ p.small {
 
 
 .account-thumbnails .thumbanil:hover .inner {
-    -webkit-box-shadow: 0px 1px 19px 0px rgba(188, 171, 255, .5);
-    -moz-box-shadow: 0px 1px 19px 0px rgba(188, 171, 255, .5);
-    box-shadow: 0px 1px 19px 0px rgba(188, 171, 255, .5);
+    -webkit-box-shadow: 0px 1px 19px 0px rgba(156, 135, 240, .5);
+    -moz-box-shadow: 0px 1px 19px 0px rgba(156, 135, 240, .5);
+    box-shadow: 0px 1px 19px 0px rgba(156, 135, 240, .5);
 }
 
 .account-icon {
