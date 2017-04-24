@@ -2504,6 +2504,101 @@ p.small {
 
 /*-- /Топ компаний --*/
 
+/*-- Account --*/
+
+.account-thumbnails {
+    width: 102%;
+    margin: 6px 0 15px -1%;
+}
+
+.account-thumbnails .thumbanil {
+    display: inline-block;
+    vertical-align: top;
+    width: 16.66%;
+    padding: 10px 1%;
+}
+
+.account-thumbnails .thumbanil .inner {
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    padding: 30px 4% 29px 4%;
+    border: 1px solid #cfdaea;
+    text-align: center;
+
+    -webkit-transition-property: box-shadow;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: box-shadow;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: box-shadow;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: box-shadow;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+
+.account-thumbnails .thumbanil:hover .inner {
+    -webkit-box-shadow: 0px 1px 19px 0px rgba(188, 171, 255, .5);
+    -moz-box-shadow: 0px 1px 19px 0px rgba(188, 171, 255, .5);
+    box-shadow: 0px 1px 19px 0px rgba(188, 171, 255, .5);
+}
+
+.account-icon {
+    display: block;
+    width: 125px;
+    height: 96px;
+    margin: 8px auto;
+    background-image: url(img/account_thumbnails_sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.account-icon.icon-1 {
+    background-position: -35px 6px;
+}
+
+.account-icon.icon-2 {
+    background-position: -236px 6px;
+}
+
+.account-icon.icon-3 {
+    background-position: -436px 6px;
+}
+
+.account-icon.icon-4 {
+    background-position: -635px 6px;
+}
+
+.account-icon.icon-5 {
+    background-position: -836px 6px;
+}
+
+.account-icon.icon-6 {
+    background-position: -1035px 6px;
+}
+
+.account-thumbnails .inner p {
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #104495;
+}
+
+
+/*-- /Account --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
