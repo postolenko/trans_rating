@@ -1265,3 +1265,23 @@ yx-axis
 	.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #fff; background-color: rgba(255,255,255,0.9); }
 	
 	/* ---------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+	.mCSB_scrollTools {
+		display: block;
+	}
+
+	.mCSB_inside > .mCSB_container {
+	    margin-right: 7px;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.mCSB_scrollTools {
+		display: none !important;
+	}
+
+	.mCSB_inside > .mCSB_container {
+		margin-right: 0;
+	}
+}

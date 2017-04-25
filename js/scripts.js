@@ -1,10 +1,22 @@
 $(document).ready(function() {
 
+    var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
+    // ----------------------------------------------
 
     var ratingBoxCount = $(".rating-box").length - 1;
     var ratingBoxIndex;
 
     getTriangleSize();
+
+    getBodyPadding();
+
+    getResponsiveNavHeight();
+
 
     $(window).resize(function() {
 
@@ -12,9 +24,15 @@ $(document).ready(function() {
 
         $(".wrapper").css({"padding-bottom" :  $(".footer").outerHeight(true) + "px"});
 
+        bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+
         // -------------------------
 
         getTriangleSize();
+
+        getBodyPadding();
+
+        getResponsiveNavHeight();
 
     });
 
@@ -145,6 +163,32 @@ $(document).ready(function() {
 
     // ----------------------------------------
 
+    $(function() {
+
+        $(".resp-btn").click(function() {
+
+            if( $(".resp-nav").is(":hidden") ) {
+
+                $(this).addClass("active");
+
+                $(".resp-nav").fadeIn(300);
+
+                getResponsiveNavHeight();
+
+            } else {
+
+                $(this).removeClass("active");
+
+                $(".resp-nav").fadeOut(300);
+
+            }
+
+        });       
+
+    });
+
+    // ----------------------------------------
+
     function getTriangleSize() {
 
         for(ratingBoxIndex = 0; ratingBoxIndex <= ratingBoxCount; ratingBoxIndex++) {
@@ -153,6 +197,37 @@ $(document).ready(function() {
                                     "border-top": ( $(".rating-box:eq("+ ratingBoxIndex +")").outerHeight() / 2 ) + "px solid transparent",
                                     "border-bottom": ( $(".rating-box:eq("+ ratingBoxIndex +")").outerHeight() / 2 ) + "px solid transparent"
                                 });
+
+        }
+
+    }
+
+    function getBodyPadding() {
+
+        if(bodyWidth <= 768) {
+
+            $("body").css({
+                "padding-top" : $(".header .top-row").height() + "px"
+            });
+
+        } else {
+
+            $("body").css({
+                "padding-top" : "0px"
+            });
+
+        }
+
+    }
+
+    function getResponsiveNavHeight() {
+
+        if(bodyWidth <= 768) {
+
+            $(".resp-nav").css({
+                "top" : $(".header .top-row").height() + "px",
+                "height" : $(window).height() - $(".header .top-row").height() + "px"
+            });
 
         }
 
