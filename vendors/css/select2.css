@@ -718,10 +718,6 @@
     top: 1px;
   }
 
-  .select2-container--open .select2-dropdown {
-    top: 5px;
-  }
-
 }
 
 @media only screen and (max-width: 480px) {
