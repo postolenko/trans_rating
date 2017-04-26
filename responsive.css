@@ -1,8 +1,58 @@
+@media only screen and (max-width: 1360px) {
+
+	/*-- Топ компаний --*/
+
+	.top-company {
+	    padding: 20px 1.5%;
+	}
+
+	.top-company .top-place-box {
+		display: inline-block;
+		vertical-align: middle;
+		width: 19%;
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    margin: 0;
+	}
+
+	.article.top-company .col-1 {
+	    width: 22%;
+	}
+
+	.article.top-company .col-2 {
+	    width: 41%;
+	}
+
+	/*-- /Топ компаний --*/
+
+}
+
 @media only screen and (max-width: 1180px) {
 
 	.row {
 		padding: 0 2%;
 	}
+
+	/*-- Выбор Региона --*/
+
+	.choise-box {
+	    width: 32.5%;
+	}
+
+	/*-- /Выбор Региона --*/
+
+	/*-- Топ компаний --*/
+
+	.article.top-company .col-1 {
+	    width: 25%;
+	}
+
+	.article.top-company .col-2 {
+	    width: 38%;
+	}
+
+	/*-- /Топ компаний --*/
 
 }
 
@@ -21,10 +71,77 @@
 
 	/*-- /Header --*/
 
+	/*-- Index Page --*/
+
 	.catalog-thumbnails .desrcipt h3 {
 		font-size: 22px;
 		line-height: 23px;
 	}
+
+	/*-- /Index Page --*/
+
+	/*-- Testimonial --*/
+
+	.info-box .col-1 {
+	    width: 30%;
+	}
+
+	.info-box .col-2 {
+	    width: 24%;
+	}
+
+	.info-box .col-3 {
+	    width: 46%;
+	}
+
+	/*-- /Testimonial --*/
+
+	/*-- Выбор Региона --*/
+
+	.choise-box {
+	    width: 31%;
+	}
+
+	/*-- /Выбор Региона --*/
+
+	/*-- Account --*/
+
+	.account-thumbnails .thumbanil {
+		width: 25%;
+	}
+
+	/*-- /Account --*/
+
+	/*-- Account 2 --*/
+
+	.table {
+		width: 100%;
+	}
+
+	.table h5 {
+	    font-size: 16px;
+	    line-height: 19px;
+	}
+
+	.table h3,
+	.table p {
+	    font-size: 15px;
+	    line-height: 19px;
+	}
+
+	.table .orange-btn {
+	    margin: 4px 0;
+	    padding: 8px 1.3% 9px 1.3%;
+	    font-size: 15px;
+	    line-height: 16px;
+	}
+
+	.table .link {
+	    font-size: 15px;
+	    line-height: 15px;
+	}
+
+	/*-- /Account 2 --*/
 
 	/*-- Footer --*/
 
@@ -148,9 +265,175 @@
 
 	/*-- /Header --*/
 
+	/*-- Index Page --*/
+
 	.thumbnails.three-thumbnail .thumbnail {
 	    width: 50%;
 	}
+
+	/*-- /Index Page --*/
+
+	/*-- Testimonials --*/
+
+	.info-box {
+	    padding: 9px 3%;
+	}
+
+	.info-box .col {
+		padding: 10px 0;
+	}
+
+	.info-box .col-1 {
+	    width: 65%;
+	}
+
+	.info-box .col-2 {
+	    width: 35%;
+	}
+
+	.info-box .col-2 .company-logo {
+		width: 100%;
+	}
+
+	.info-box .col-3 {
+	    width: 100%;
+	}
+
+	/*-- /Testimonials --*/
+
+	/*-- Выбор Региона --*/
+
+	.choise-box {
+	    width: 48%;
+	}
+
+	.choise-list li a {
+	    padding: 7px 5px 7px 15px;
+	    font-size: 17px;
+	    line-height: 20px;
+	}
+
+	/*-- /Выбор Региона --*/
+
+	/*-- Companies --*/
+
+	.company-info-box .col-1 {
+	    width: 50%;
+	}
+
+	.company-info-box .col-2 {
+	    width: 50%;
+	}
+
+	.company-contact .col-2 {
+	    text-align: left;
+	}
+
+	.company-info-box .col-3 {
+	    width: 100%;
+	}
+
+	.blue-buttons-box {
+		text-align: right;
+	}
+
+	.article .col-2 {
+	    width: 56%;
+	    padding: 0 1% 0 0;
+	}
+
+	.article .col-3 {
+	    width: 23%;
+	}
+
+	/*-- /Companies --*/
+
+	/*-- Top --*/
+
+	.article .col-1 {
+	    width: 100%;
+	}
+
+	.article .col-2 {
+	    width: 77%;
+	}
+
+	/*-- /Top --*/
+
+	/*-- Popup --*/
+
+	.select-block {
+	    padding: 5px 0 12px 0;
+	}
+
+	.input-block {
+	    padding: 0 0 12px 0;
+	}
+
+	/*-- /Popup --*/
+
+	/*-- Add Article --*/
+
+	.form-box .input-block label {
+	    width: 33%;
+	}
+
+	.form-box .input-block input,
+	.form-box .input-block textarea,
+	.form-box .input-block .two-inputs,
+	.form-box .input-block .select-box {
+	    width: 67%;
+	}
+
+	/*-- /Add Article --*/
+
+	/*-- Order Page --*/
+
+	.tabs-header label {
+	    min-width: 190px;
+	}
+
+	/*-- /Order Page --*/
+
+	/*-- Топ компаний --*/
+
+	.top-company .top-place-box {
+		width: 50%;
+	}
+
+	.article.top-company .col-1 {
+	    width: 50%;
+	}
+
+	.article.top-company .col-2 {
+	    width: 70%;
+	}
+
+	.article.top-company .col-3 {
+	    width: 30%;
+	}
+
+	/*-- /Топ компаний --*/
+
+	/*-- Account --*/
+
+	.account-thumbnails .thumbanil {
+		width: 33.33%;
+	}
+
+	/*-- /Account --*/
+
+	/*-- Account 2 --*/
+
+	.scroll-horizontal .tables {
+	    width: 700px;
+	}
+
+	.tables {
+	    margin: 11px 0;
+	}
+
+	/*-- /Account 2 --*/
 
 	/*-- Footer --*/
 
@@ -192,6 +475,34 @@
 	    line-height: 36px;
 	}
 
+	/*-- Header --*/
+
+	.sign-in {
+	    padding: 8px 1%;
+	}
+
+	/*-- /Header --*/
+
+	/*-- Popups --*/
+
+	.popup {
+    	width: 94%;
+    }
+
+    input {
+	    height: 38px;
+	}
+
+    /*-- /Popups --*/
+
+    /*-- Account --*/
+
+	.account-thumbnails .thumbanil {
+		width: 50%;
+	}
+
+	/*-- /Account --*/
+
 }
 
 
@@ -201,6 +512,10 @@
 	h2 {
 	    font-size: 27px;
 	    line-height: 32px;
+	}
+
+	.margin-big {
+	    margin-top: 10px;
 	}
 
 	/*-- Header --*/
@@ -229,17 +544,197 @@
 	    width: 50%;
 	}
 
-	.sign-in {
-	    padding: 8px 1%;
-	}
-
 	/*-- /Header --*/
+
+	/*-- Index Page --*/
 
 	.thumbnails.three-thumbnail .thumbnail {
 	    width: 98%;
 	    display: block;
 	    margin: 0 auto;
 	}
+
+	/*-- /Index Page --*/
+
+	/*-- Testimonials --*/
+
+	.info-box {
+	    padding: 9px 3% 2px 3%;
+	}
+
+	.info-box .col {
+		padding: 10px 0;
+		text-align: center;
+	}
+
+	.info-box .col-1 {
+	    width: 100%;
+	}
+
+	.info-box .col-2 {
+	    width: 100%;
+	}
+
+	.info-box .col-2 .company-logo {
+		width: 100%;
+	}
+
+	.info-box .col-3 {
+	    width: 100%;
+	}
+
+	.testimonial .img-box {
+	    width: 90%;
+	}
+
+	.pagination-list li a {
+	    min-width: 34px;
+	    padding: 7px 5px;
+	}
+
+	/*-- /Testimonials --*/
+
+	/*-- Выбор Региона --*/
+
+	.choise-box {
+	    width: 98%;
+	}
+
+	.choise-list li a {
+	    padding: 7px 5px 7px 15px;
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+
+	/*-- /Выбор Региона --*/
+
+	/*-- Companies --*/
+
+	.company-info-box .col-1 {
+	    width: 100%;
+	}
+
+	.company-info-box .col-2 {
+	    width: 100%;
+	}
+
+	.blue-buttons-box {
+	    text-align: left;
+	    padding-right: 2%;
+	}
+
+	/*-- /Companies --*/
+
+	/*-- Top --*/
+
+	.article .col-1 {
+	    width: 100%;
+	}
+
+	.article .col-2 {
+	    width: 100%;
+	    padding: 0;
+	}
+
+	.article .col-3 {
+	    width: 100%;
+	}
+
+	/*-- /Top --*/
+
+	/*-- Add Article --*/
+
+	.form-box {
+	    padding: 12px 2%;
+	}
+
+	.form-box .form-header {
+	    padding: 5px 0;
+	}
+
+	.form-box .input-block label {
+	    width: 100%;
+	    text-align: left;
+	    padding: 0 0 5px 0;
+	}
+
+	.form-box .input-block input,
+	.form-box .input-block textarea,
+	.form-box .input-block .two-inputs,
+	.form-box .input-block .select-box {
+	    width: 100%;
+	}
+
+	.form-box input,
+	.form-box textarea {
+	    padding-left: 13px;
+	}
+
+	.form-box button[type=submit] {
+	    width: 100%;
+	    max-width: 100%;
+	    margin: 11px 0;
+	}
+
+	/*-- /Add Article --*/
+
+	/*-- Топ компаний --*/
+
+	.top-company .top-place-box {
+		width: 50%;
+	}
+
+	.article.top-company .col-1 {
+	    width: 50%;
+	}
+
+	.article.top-company .col-2 {
+	    width: 100%;
+	}
+
+	.article.top-company .col-3 {
+	    width: 100%;
+	}
+
+	/*-- /Топ компаний --*/
+
+	/*-- Account --*/
+
+	.account-thumbnails .thumbanil {
+		width: 98%;
+	}
+
+	/*-- /Account --*/
+
+}
+
+@media only screen and (max-width: 350px) {
+	/*-- Топ компаний --*/
+
+	.top-company .top-place-box {
+		width: 100%;
+	}
+
+	.article.top-company .col {
+		padding: 10px 0;
+	}
+
+	.article.top-company .col-1 {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.article.top-company .col-2 {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.article.top-company .col-3 {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	/*-- /Топ компаний --*/
 
 }
 

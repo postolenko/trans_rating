@@ -11,6 +11,15 @@ $(document).ready(function() {
     var ratingBoxCount = $(".rating-box").length - 1;
     var ratingBoxIndex;
 
+    // ----------------------------------------------
+
+    var choiseListCount =  $(".choise-list").length;
+    var choiseListIndex = 0;
+    var choiseLinkCount;
+    var choiseLinkIndex;
+
+    // -----------------------------------------------
+
     getTriangleSize();
 
     getBodyPadding();
@@ -33,6 +42,8 @@ $(document).ready(function() {
         getBodyPadding();
 
         getResponsiveNavHeight();
+
+        getLinkTriangleSize();
 
     });
 
@@ -57,30 +68,34 @@ $(document).ready(function() {
 
     // ----------------------------------------
 
-    var choiseListCount =  $(".choise-list").length;
+    $(function() {
 
-    var choiseListIndex = 0;
+        // var choiseListCount =  $(".choise-list").length;
 
-    var choiseLinkCount;
+        // var choiseListIndex = 0;
 
-    var choiseLinkIndex;
+        // var choiseLinkCount;
 
-    for ( choiseListIndex = 0; choiseListIndex < choiseListCount; choiseListIndex++ ) {
+        // var choiseLinkIndex;
 
-        choiseLinkCount = $(".choise-list:eq("+ choiseListIndex +") li").length;
+        for ( choiseListIndex = 0; choiseListIndex < choiseListCount; choiseListIndex++ ) {
 
-        for( choiseLinkIndex = 0; choiseLinkIndex < choiseLinkCount; choiseLinkIndex++) {
+            choiseLinkCount = $(".choise-list:eq("+ choiseListIndex +") li").length;
 
-            $(".choise-list:eq("+ choiseListIndex +") li a:eq("+ choiseLinkIndex +")").append("<span class='link-triangle'></span>");
+            for( choiseLinkIndex = 0; choiseLinkIndex < choiseLinkCount; choiseLinkIndex++) {
 
-            $(".choise-list:eq("+ choiseListIndex +") li a:eq("+ choiseLinkIndex +") .link-triangle").css({
-                "border-top": ( $(".choise-list:eq("+ choiseListIndex +") li:eq("+ choiseLinkIndex +")").height() / 2 ) + "px solid transparent",
-                "border-bottom": ( $(".choise-list:eq("+ choiseListIndex +") li:eq("+ choiseLinkIndex +")").height() / 2 ) + "px solid transparent"
-            });
+                $(".choise-list:eq("+ choiseListIndex +") li a:eq("+ choiseLinkIndex +")").append("<span class='link-triangle'></span>");
+
+                $(".choise-list:eq("+ choiseListIndex +") li a:eq("+ choiseLinkIndex +") .link-triangle").css({
+                    "border-top": ( $(".choise-list:eq("+ choiseListIndex +") li:eq("+ choiseLinkIndex +")").height() / 2 ) + "px solid transparent",
+                    "border-bottom": ( $(".choise-list:eq("+ choiseListIndex +") li:eq("+ choiseLinkIndex +")").height() / 2 ) + "px solid transparent"
+                });
+
+            }
 
         }
 
-    }
+    });
 
     // ----------------------------------------
 
@@ -109,8 +124,6 @@ $(document).ready(function() {
         });
 
     });
-
-    // ------------------------------------------
 
     $(function() {
 
@@ -234,6 +247,25 @@ $(document).ready(function() {
                 "top" : $(".header .top-row").height() + "px",
                 "height" : $(window).height() - $(".header .top-row").height() + "px"
             });
+
+        }
+
+    }
+
+    function getLinkTriangleSize() {
+
+        for ( choiseListIndex = 0; choiseListIndex < choiseListCount; choiseListIndex++ ) {
+
+            choiseLinkCount = $(".choise-list:eq("+ choiseListIndex +") li").length;
+
+            for( choiseLinkIndex = 0; choiseLinkIndex < choiseLinkCount; choiseLinkIndex++) {
+
+                $(".choise-list:eq("+ choiseListIndex +") li a:eq("+ choiseLinkIndex +") .link-triangle").css({
+                    "border-top": ( $(".choise-list:eq("+ choiseListIndex +") li:eq("+ choiseLinkIndex +")").height() / 2 ) + "px solid transparent",
+                    "border-bottom": ( $(".choise-list:eq("+ choiseListIndex +") li:eq("+ choiseLinkIndex +")").height() / 2 ) + "px solid transparent"
+                });
+
+            }
 
         }
 

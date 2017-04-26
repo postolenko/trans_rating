@@ -14,10 +14,12 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link href="vendors/css/select2.css" rel="stylesheet" />
+	<link rel="stylesheet" href="vendors/css/jquery.mCustomScrollbar.css">
 	<script type="text/javascript" src="vendors/js/jquery.js"></script>
 	<script type="text/javascript" src="slick/slick.js"></script>
 	<script type="text/javascript" src="vendors/js/select2.min.js"></script>
 	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="vendors/js/wow.min.js"></script>
 	<script>new WOW().init();</script>
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">	
@@ -46,20 +48,31 @@
 							</a>
 						</div>
 
+						<div class="resp-btn-block">
+							<button type="button" class="resp-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+
+					</div>
+
+					<div class="col col-2">
 						<div class="select-box">
 							
 							<select>							
 								<option>Сочи</option>
 								<option>Москва</option>
 								<option>Ленинград</option>
-								<option>Санкт Перербург</option>
+								<option>Санкт Петербург</option>
 							</select>
 
 						</div>
 
 					</div>
 
-					<div class="col col-2">
+					<div class="col col-3">
 						
 						<div class="sign-box">						
 							<a href="#" class="sign-in"><i class="sign-in-icon"></i>Войти</a>
@@ -71,18 +84,11 @@
 
 			</div>
 
-			<div class="row-2">
+			<div class="resp-nav row-2 scroll">
 
-				<div class="row offset-ziro">
+				<div class="row clearfix">
 
 					<div class="col col-1">
-						<ul class="main-nav">					
-							<li><a class="active" href="#">Компании</a></li>
-							<li><a href="#">Объявления</a></li>
-						</ul>
-					</div>
-
-					<div class="col col-2">
 						<div class="search">
 							<form>
 								<div class="search-box">
@@ -92,6 +98,13 @@
 							</form>
 						</div>
 					</div>
+
+					<div class="col col-2">
+						<ul class="main-nav">					
+							<li><a class="active" href="#">Компании</a></li>
+							<li><a href="#">Объявления</a></li>
+						</ul>
+					</div>					
 
 				</div>
 
@@ -137,89 +150,94 @@
 							<a href="#" class="orange-btn">Подать объявление</a>
 						</div>
 
-						<div class="tables">
 
-							<div class="table-box table-header">
-								<div class="table">
-									<div class="cell cell-1">
-										<h5>Заголовок</h5>
-									</div>
-									<div class="cell cell-2">
-										<h5>Раздел</h5>
-									</div>
-									<div class="cell cell-3">
-										<h5>Дата и время</h5>
-									</div>
-									<div class="cell cell-4">
-										<h5>Статус</h5>
-									</div>
-									<div class="cell cell-5">
-										<h5>Опции</h5>
+						<div class="scroll-horizontal">
+
+							<div class="tables">
+
+								<div class="table-box table-header">
+									<div class="table">
+										<div class="cell cell-1">
+											<h5>Заголовок</h5>
+										</div>
+										<div class="cell cell-2">
+											<h5>Раздел</h5>
+										</div>
+										<div class="cell cell-3">
+											<h5>Дата и время</h5>
+										</div>
+										<div class="cell cell-4">
+											<h5>Статус</h5>
+										</div>
+										<div class="cell cell-5">
+											<h5>Опции</h5>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="table-box">
-								<div class="table">
-									<div class="cell cell-1">
-										<p>Большой выбор автовышек</p>
-									</div>
-									<div class="cell cell-2">
-										<p>Автовышки</p>
-									</div>
-									<div class="cell cell-3">
-										<p>24 Ноября 2018, 11:47</p>
-									</div>
-									<div class="cell cell-4">
-										<p>Опубликовано</p>
-									</div>
-									<div class="cell cell-5">
-										<a href="#" class="orange-btn">Поднять бесплатно</a>
-										<a href="#" class="link">Редактировать</a>
+								<div class="table-box">
+									<div class="table">
+										<div class="cell cell-1">
+											<p>Большой выбор автовышек</p>
+										</div>
+										<div class="cell cell-2">
+											<p>Автовышки</p>
+										</div>
+										<div class="cell cell-3">
+											<p>24 Ноября 2018, 11:47</p>
+										</div>
+										<div class="cell cell-4">
+											<p>Опубликовано</p>
+										</div>
+										<div class="cell cell-5">
+											<a href="#" class="orange-btn">Поднять бесплатно</a>
+											<a href="#" class="link">Редактировать</a>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="table-box">
-								<div class="table">
-									<div class="cell cell-1">
-										<p>Большой выбор автовышек</p>
-									</div>
-									<div class="cell cell-2">
-										<p>Автовышки</p>
-									</div>
-									<div class="cell cell-3">
-										<p>24 Ноября 2018, 11:47</p>
-									</div>
-									<div class="cell cell-4">
-										<p>Опубликовано</p>
-									</div>
-									<div class="cell cell-5">
-										<a href="#" class="orange-btn">Поднять бесплатно</a>
-										<a href="#" class="link">Редактировать</a>
+								<div class="table-box">
+									<div class="table">
+										<div class="cell cell-1">
+											<p>Большой выбор автовышек</p>
+										</div>
+										<div class="cell cell-2">
+											<p>Автовышки</p>
+										</div>
+										<div class="cell cell-3">
+											<p>24 Ноября 2018, 11:47</p>
+										</div>
+										<div class="cell cell-4">
+											<p>Опубликовано</p>
+										</div>
+										<div class="cell cell-5">
+											<a href="#" class="orange-btn">Поднять бесплатно</a>
+											<a href="#" class="link">Редактировать</a>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="table-box">
-								<div class="table">
-									<div class="cell cell-1">
-										<p>Большой выбор автовышек</p>
-									</div>
-									<div class="cell cell-2">
-										<p>Автовышки</p>
-									</div>
-									<div class="cell cell-3">
-										<p>24 Ноября 2018, 11:47</p>
-									</div>
-									<div class="cell cell-4">
-										<p>Опубликовано</p>
-									</div>
-									<div class="cell cell-5">
-										<a href="#" class="orange-btn">Поднять бесплатно</a>
-										<a href="#" class="link">Редактировать</a>
+								<div class="table-box">
+									<div class="table">
+										<div class="cell cell-1">
+											<p>Большой выбор автовышек</p>
+										</div>
+										<div class="cell cell-2">
+											<p>Автовышки</p>
+										</div>
+										<div class="cell cell-3">
+											<p>24 Ноября 2018, 11:47</p>
+										</div>
+										<div class="cell cell-4">
+											<p>Опубликовано</p>
+										</div>
+										<div class="cell cell-5">
+											<a href="#" class="orange-btn">Поднять бесплатно</a>
+											<a href="#" class="link">Редактировать</a>
+										</div>
 									</div>
 								</div>
+
 							</div>
 
 						</div>
@@ -276,6 +294,21 @@
 
 		<script src="js/scripts.js"></script>
 		<script type="text/javascript">
+
+			(function($){
+
+				$(window).on("load",function(){
+
+					$(".scroll").mCustomScrollbar();
+
+					$(".scroll-horizontal").mCustomScrollbar({
+						axis:"x"
+					});
+
+				});
+
+			})(jQuery);
+
 			$("select").select2();
 
 			$(".big-slider").slick({

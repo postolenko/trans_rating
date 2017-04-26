@@ -1267,21 +1267,21 @@ yx-axis
 	/* ---------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-	.mCSB_scrollTools {
+	.resp-nav .mCSB_scrollTools {
 		display: block;
 	}
 
-	.mCSB_inside > .mCSB_container {
+	.resp-nav .mCSB_inside > .mCSB_container {
 	    margin-right: 7px;
 	}
 }
 
 @media only screen and (min-width: 769px) {
-	.mCSB_scrollTools {
-		display: none !important;
+	.resp-nav .mCSB_scrollTools {
+		opacity: 0 !important;
 	}
 
-	.mCSB_inside > .mCSB_container {
+	.resp-nav .mCSB_inside > .mCSB_container {
 		margin-right: 0;
 	}
 }
