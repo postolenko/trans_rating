@@ -736,6 +736,15 @@
 
 	/*-- /Топ компаний --*/
 
+	/*-- Account 2 --*/
+
+	header .head-link.width-90 {
+	    min-width: 130px;
+	    margin-left: 0;
+	}
+
+	/*-- /Account 2 --*/
+
 }
 
 
