@@ -719,7 +719,7 @@
   }
 
   .select2-container--open .select2-dropdown {
-    top: 0;
+    top: 5px;
   }
 
 }
