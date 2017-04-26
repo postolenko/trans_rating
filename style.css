@@ -90,6 +90,15 @@ select {
     text-overflow: "";
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 *::-ms-expand { display: none; }
 
 input::-webkit-input-placeholder       {opacity: 1; transition: opacity .3s ease;}
