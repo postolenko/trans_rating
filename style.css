@@ -2161,6 +2161,7 @@ textarea {
     height: 165px;
     padding: 13px 3%;
     resize: none;
+    overflow: auto;
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
     font-size: 18px;
     line-height: 20px;
@@ -3030,10 +3031,6 @@ footer {
 
 }
 
-.popup h2 {
-
-}
-
 .close-popup {
     display: block;
     width: 22px;
@@ -3055,7 +3052,7 @@ footer {
     line-height: 28px;
     color: #8d96ac;
     position: relative;
-    top: -2px;
+    top: -4px;
     left: -1px;
 }
 
