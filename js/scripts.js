@@ -20,6 +20,19 @@ $(document).ready(function() {
 
     // -----------------------------------------------
 
+    var popupName;
+
+    // -----------------------------------------------
+
+    var uploadFileAttr;
+
+    // -----------------------------------------------
+
+    var tabLinkParent;
+    var indexTabsSection;
+
+    // -----------------------------------------------
+
     getTriangleSize();
 
     getBodyPadding();
@@ -101,7 +114,7 @@ $(document).ready(function() {
 
     $(function() {
 
-        var popupName;
+        // var popupName;
 
         $(".show_popup").click(function(clickEvent) {
 
@@ -144,7 +157,7 @@ $(document).ready(function() {
 
         $(".upload-file").click(function() {
 
-            var uploadFileAttr = $(this).attr("data-file-index");
+            uploadFileAttr = $(this).attr("data-file-index");
 
             $("input[id = upload_file_" + uploadFileAttr +"]").click();
 
@@ -158,11 +171,9 @@ $(document).ready(function() {
 
         $(".tab-link").click(function() {
 
-            var tabLinkParent = $(this).parent($(".tabs-links"));
+            tabLinkParent = $(this).parent($(".tabs-links"));
 
-            var indexTabsSection =  tabLinkParent.index(".tabs-links");
-
-            console.log(indexTabsSection);
+            indexTabsSection =  tabLinkParent.index(".tabs-links");
 
             if( $(this).hasClass("active") ) {
 

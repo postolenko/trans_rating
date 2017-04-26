@@ -5,10 +5,6 @@
 /*------------------*/
 
 
-
-
-
-
 /*-------------------------------------------*/
 /* BASIC SETUP */
 /*-------------------------------------------*/
@@ -145,7 +141,6 @@ h1 {
 
 }
 
-
 h2 {
     font-family: "Fira Sans", Arial, Verdana, sans-serif;
     font-size: 33px;
@@ -156,11 +151,20 @@ h2 {
 }
 
 h3 {
-
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #104495;
 }
 
 p {
-
+    font-family: "Fira Sans", Arial, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: #272b34;
 }
 
 li {
@@ -1520,9 +1524,9 @@ a:active {
     margin: 10px 0 0 0;
 }
 
-/*.company-contact.tel-links {
-    margin: 19px 0 0 0;
-}*/
+.company-contact.tel-links + .company-contact {
+    margin-top: 1px;
+}
 
 .company-contact .icon-box {
     display: table-cell;
