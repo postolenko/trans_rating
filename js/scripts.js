@@ -213,7 +213,16 @@ $(document).ready(function() {
 
             }
 
-        });       
+        });
+
+        $(this).keydown(function(eventObject){
+            if (eventObject.which == 27 && bodyWidth <= 768) {
+                
+                $(".resp-nav").fadeOut(300);
+                $(".resp-btn").removeClass("active");
+
+             }
+        });      
 
     });
 
